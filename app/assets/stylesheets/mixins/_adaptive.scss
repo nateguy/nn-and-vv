@@ -1,0 +1,34 @@
+@import "mixins/responsive";
+
+@include mobile-portrait-only {
+  .container {
+    width: $mq-mobile-portrait !important;
+  }
+}
+
+@include mobile-landscape-only {
+  .container {
+    width: $mq-mobile-portrait !important;
+  }
+}
+
+@include tablet-portrait-only() {
+  .container {
+    width: $mq-mobile-landscape !important;
+  }
+}
+@include tablet-landscape-only() {
+  .container {
+    width: $mq-tablet-portrait !important;
+  }
+}
+@include desktop-only() {
+  .container {
+    width: $mq-tablet-landscape !important;
+  }
+}
+@include desktop-above-only() {
+  .container {
+    width: $mq-desktop !important;
+  }
+}

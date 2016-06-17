@@ -1,0 +1,20 @@
+@mixin font-family($fonts: false, $important: false) {
+  $default-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  @if $fonts {
+    @if $important {
+      font-family: $fonts, $default-font-family !important;
+    }
+    @else {
+      font-family: $fonts, $default-font-family;
+    }
+  }
+  @else {
+    @if $important {
+      font-family: $default-font-family !important;
+    }
+    @else {
+      font-family: $default-font-family;
+    }
+  }
+
+}

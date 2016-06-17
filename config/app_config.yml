@@ -1,0 +1,18 @@
+defaults: &defaults
+  models:
+    defaults:
+      email:
+        format:
+          with_regexp: !ruby/regexp '/\A[\w\._%\-\+]+@[\w\.-]+\.[a-zA-Z]{2,4}\z/'
+          multiple_comma_separated_with_regexp: !ruby/regexp '/\A[\w\._%\-\+]+@[\w\.-]+\.[a-zA-Z]{2,4}(?:\,(?:[\w\._%\-\+]+@[\w\.-]+\.[a-zA-Z]{2,4}))*\z/'
+      token:
+        length: 16
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

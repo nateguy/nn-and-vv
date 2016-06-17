@@ -1,0 +1,38 @@
+@import "mixins/buttons";
+
+#page-parties-change,
+#page-parties-new {
+  .btn.btn-primary {
+    @include btn-primary();
+  }
+  .parties-new-form-container {
+    border-radius: 20px;
+    background-color: rgba(252,202,210,0.5);
+    width: 500px;
+    padding: 20px;
+
+    .guest_list_title, label {
+      color: #000000;
+    }
+
+    .guest_list {
+      list-style-type: none;
+      margin: 0;
+
+      .guest-item {
+        display: table-row;
+        input {
+          display: block;
+          float: left;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .parties-new-form-actions {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+}

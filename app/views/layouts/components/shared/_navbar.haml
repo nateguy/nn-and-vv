@@ -1,0 +1,22 @@
+.nav-container
+  %nav.main-navbar.navbar.navbar-static-top
+    %ul.nav
+      %li.navbar-item
+        = link_to localized_root_path do
+          = "Home"
+      %li.navbar-item
+        = link_to wedding_path do
+          = "Wedding Party"
+      %li.navbar-item
+        = link_to ceremony_path do
+          = "Information"
+
+      %li.navbar-item
+        = link_to photos_path do
+          = "Photos"
+      %li.navbar-item
+        = link_to transportation_path do
+          = "Transportation"
+      %li.navbar-item
+        = link_to parties_path do
+          = "RSVP"

@@ -1,0 +1,26 @@
+.nav-container {
+  text-align: center;
+  .main-navbar {
+    margin-top: 25px;
+    display: inline-block;
+    .nav > li > a {
+      color: #000000 !important;
+      padding: 0 5px !important;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1em;
+      font-family: garamond_premr_proregular;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 5px rgba(100,100,100,0.3);
+    }
+    .navbar-item {
+      height: 30px;
+      line-height: 30px;
+      vertical-align: middle;
+      position: relative;
+      float: left;
+      list-style: none;
+    }
+  }
+
+}

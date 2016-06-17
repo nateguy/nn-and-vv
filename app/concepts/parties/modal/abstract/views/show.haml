@@ -1,0 +1,9 @@
+.cell-parties-modal
+  .modal-header
+    = "Enter your reservation code"
+  .modal-body
+    .cell-parties-modal--form-body
+      = simple_form_for(party, url: change_parties_path, method: :get,
+          html: {data: {method: :get}}) do |f|
+        = f.input :reference_code, label: false, input_html: {tabindex: 1}
+        = f.button :submit, "Submit"

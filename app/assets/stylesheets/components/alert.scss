@@ -1,0 +1,22 @@
+.alert-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  .alert {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+
+    position: relative;
+    width: 300px;
+    padding: 10px 5px;
+    z-index: 100;
+    text-align: center;
+
+    &.alert-success {
+      border: 1px solid #468847;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+!!! 5
+%html{id: body_id}
+  %head
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    %title
+      = "Nate and Vivian"
+  %body
+    #page-container.page-container
+      = render 'layouts/components/shared/flashes'
+      .container
+        = render("layouts/components/shared/navbar")
+      .container
+        .main-container
+          = yield
+    = javascript_include_tag "application", 'data-turbolinks-track' => true

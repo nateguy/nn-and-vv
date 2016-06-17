@@ -1,0 +1,34 @@
+- set_body_id('page-parties-change')
+.page-section
+  .parties-new-form-container
+    %h1
+      = "Edit Reservation"
+    - if @party.present?
+      = simple_form_for(@party) do |f|
+        = f.input(:email, required: true)
+        = f.input(:phone, required: true)
+        = f.input(:address, required: true)
+        = "Attendees"
+        %ul.guest_list
+          - @party.guests.each_with_index do |guest, index|
+            %li.guest-item
+              = f.input_field(:last_names,
+                  multiple: true,
+                  placeholder: "Last Name",
+                  label: false,
+                  value: guest.last_name,
+                )
+              = f.input_field(:first_names,
+                  multiple: true,
+                  placeholder: "First Name",
+                  label: false,
+                  value: guest.first_name,
+                )
+              - unless index == 0
+                %button.btn.btn-remove-guest
+                  = "X"
+        %button.btn.btn-add-guest
+          = "Add Guest"
+        .parties-new-form-actions
+          -# = f.submit
+          = f.button :submit, class: "btn-primary"

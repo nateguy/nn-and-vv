@@ -1,0 +1,23 @@
+- set_body_id('page-parties-new')
+.page-section
+  .parties-new-form-container
+    %h1
+      = "New Reservation"
+
+    = simple_form_for(@party) do |f|
+
+      = f.input(:email, required: true)
+      = f.input(:phone, required: true)
+      = f.input(:address, required: true)
+
+      %ul.guest_list
+        %span.guest_list_title= "Your name?"
+        %li.guest-item
+          = f.input_field(:last_names, multiple: true, placeholder: "Last Name", label: false)
+          = f.input_field(:first_names, multiple: true, placeholder: "First Name", label: false)
+        %span.guest_list_title= "Who's coming with you?"
+      %button.btn.btn-add-guest
+        = "Add Guest"
+      .parties-new-form-actions
+        -# = f.submit
+        = f.button :submit, class: "btn-primary"

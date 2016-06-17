@@ -1,0 +1,32 @@
+@import "mixins/font-family";
+@import "mixins/responsive";
+@import "mixins/adaptive";
+
+.page-section {
+  margin-top: 30px;
+
+  .page-section__heading {
+    text-align: center;
+
+    .page-section__heading-couple-name,
+    .page-section__heading-date,
+    .page-section__heading-location, {
+      display: inline-block;
+      line-height: 1.2;
+      width: 100%;
+    }
+    .page-section__heading-couple-name {
+      font-size: 70px;
+      @include font-family('Great Vibes', $important: true);
+    }
+
+    .page-section__heading-date {
+      font-size: 30px;
+      font-family: garamond_premr_proregular;
+    }
+    .page-section__heading-location {
+      font-size: 19px;
+      font-family: garamond_premr_proregular;
+    }
+  }
+}
