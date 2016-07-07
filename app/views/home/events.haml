@@ -1,0 +1,89 @@
+- set_body_id('page-home-events')
+= javascript_include_tag("https://maps.googleapis.com/maps/api/js")
+.page-section
+  %ul.nav.nav-tabs
+    %li
+      %a{data: {toggle: 'tab', lat: 114.1547693, lng: 22.286361}, href: '#tea'}
+        = t("views.templates.events.tea.heading")
+    %li.active
+      %a{data: {toggle: 'tab', lat: 114.133148, lng: 22.262156}, href: '#ceremony'}
+        = t("views.templates.events.ceremony.heading")
+    %li
+      %a{data: {toggle: 'tab', lat: 114.1547693, lng: 22.286361}, href: '#reception'}
+        = t("views.templates.events.reception.heading")
+
+  .tab-content
+    #tea.tab-pane.fade
+      .tab-section-image
+        = image_tag("pages/home/events/reception.jpg")
+
+      .tab-section-text
+        %h4
+          = t("views.templates.events.reception.location")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.location')}:"
+          = t('views.templates.events.tea.room')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.date')}:"
+          = t('views.templates.events.shared.text.date')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.time')}:"
+          = t("views.templates.events.tea.time")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.address')}:"
+          = t("views.templates.events.tea.address")
+        .page-section__events_notes
+          = t("views.templates.events.tea.invitation")
+    #ceremony.tab-pane.fade.in.active
+      .tab-section-image
+        = image_tag("pages/home/events/ceremony.jpg")
+
+      .tab-section-text
+        %h4
+          = t("views.templates.events.ceremony.location")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.date')}:"
+          = t('views.templates.events.shared.text.date')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.time')}:"
+          = t("views.templates.events.ceremony.time")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.address')}:"
+          = t("views.templates.events.ceremony.address")
+        .page-section__events_notes
+          = t("views.templates.events.ceremony.invitation")
+    #reception.tab-pane.fade{data: {lat: 113.133148, lng: 22.262156}}
+      .tab-section-image
+        = image_tag("pages/home/events/reception.jpg")
+      .tab-section-text
+        %h4
+          = t("views.templates.events.reception.location")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.location')}:"
+          = t('views.templates.events.reception.room')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.date')}:"
+          = t('views.templates.events.shared.text.date')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.time')}:"
+          = t("views.templates.events.reception.time")
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.address')}:"
+          = t("views.templates.events.reception.address")
+        .page-section__events_notes
+          = t("views.templates.events.reception.invitation")
+        .page-section__events_notes
+          = t("views.templates.events.reception.shuttle")
+    .page-section__events_map
+      #event_map

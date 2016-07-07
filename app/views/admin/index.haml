@@ -1,0 +1,20 @@
+.page-section
+  - if user_signed_in?
+    .page-section-header
+      = "Registered: #{@guests.size}"
+    %table
+      %tr
+        %td
+          %b= "First Name"
+        %td
+          %b= "Last Name"
+        %td
+          %b= "Contact Email"
+      - @guests.each do |guest|
+        %tr
+          %td
+            = guest.last_name
+          %td
+            = guest.first_name
+          %td
+            = guest.party.email

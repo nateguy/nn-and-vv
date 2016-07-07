@@ -8,11 +8,6 @@ class PartiesController < ApplicationController
     @parties = Party.all
   end
 
-  # GET /parties/1
-  # GET /parties/1.json
-  def show
-  end
-
   def change
     reference_code = party_params[:reference_code]
     @party = Party.where(reference_code: reference_code).first
@@ -22,10 +17,6 @@ class PartiesController < ApplicationController
   # GET /parties/new
   def new
     @party = Party.new
-  end
-
-  # GET /parties/1/edit
-  def edit
   end
 
   def load
@@ -42,12 +33,12 @@ class PartiesController < ApplicationController
     @party.assign_random_reference_code
 
     if @party.save
-      #PartyMailer.confirmation_email(@party)
+      PartyMailer.confirmation_email(@party).deliver
       #head 200
-      flash[:success] = "Reservation Successful"
+      flash[:success] = "RSVP saved!"
     else
       #head 422
-      flash[:error] = "Reservation not success. Please try again"
+      flash[:error] = "RSVP failed! Please try again"
     end
     redirect_to localized_root_path
   end
@@ -60,7 +51,7 @@ class PartiesController < ApplicationController
     if @party.save
       flash[:success] = "Reservation Info Updated"
     else
-      flash[:error] = "Reservation not success. Please try again"
+      flash[:error] = "Reservation not successful. Please try again"
     end
     redirect_to localized_root_path
   end
@@ -68,11 +59,12 @@ class PartiesController < ApplicationController
   # DELETE /parties/1
   # DELETE /parties/1.json
   def destroy
-    @party.destroy
-    respond_to do |format|
-      format.html { redirect_to parties_url, notice: 'Party was successfully destroyed.' }
-      format.json { head :no_content }
+    if @party.destroy
+      flash[:success] = "RSVP Deleted"
+    else
+      flash[:error] = "Could not delete RSVP"
     end
+    redirect_to localized_root_path
   end
 
   private

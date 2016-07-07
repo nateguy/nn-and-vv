@@ -1,19 +1,92 @@
+- set_body_id('page-home-wedding')
 .page-section
   .page-section__wedding_party
-    .page-section__wedding_party_title
-      = "Groomsmen"
-    .page-section__wedding_party_people
-      = "Andrew Nunn"
-      = "Jordan Tseng"
-      = "Byron Tseng"
-      = "Eric Low"
-      = "Kevin Kan"
-  .page-section__wedding_party
-    .page-section__wedding_party_title
-      = "Bridesmaids"
-    .page-section__wedding_party_people
-      = "Chiaki Chan"
-      = "Peony Tang"
-      = "Ada Lau"
-      = "Hilda Tsang"
-      = "Doreen Ng"
+    = concept('gallery/party/cell').call
+
+  -#   .page-section__wedding_party_title
+  -#     = "Groomsmen"
+  -#   .page-section__wedding_party_people
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/andrew.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Andrew Nunn"
+  -#         .person_title
+  -#           = "Best Man"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/jordan.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Jordan Tseng"
+  -#         .person_title
+  -#           = "Groomsman, Brother of Groom"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/byron.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Byron Tseng"
+  -#         .person_title
+  -#           = "Groomsman, Brother of Groom"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/eric.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Eric Low"
+  -#         .person_title
+  -#           = "Groomsman"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/kevin.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Kevin Kan"
+  -#         .person_title
+  -#           = "Groomsman"
+  -# .page-section__wedding_party
+  -#   .page-section__wedding_party_title
+  -#     = "Bridesmaids"
+  -#   .page-section__wedding_party_people
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/sample.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Chiaki Chan"
+  -#         .person_title
+  -#           = "Maid of Honor"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/peony.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Peony Tang"
+  -#         .person_title
+  -#           = "Bridesmaid"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/sample.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Ada Lau"
+  -#         .person_title
+  -#           = "Bridesmaid"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/sample.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Hilda Tsang"
+  -#         .person_title
+  -#           = "Bridesmaid"
+  -#     .page-section__wedding_party_person
+  -#       .page-section__wedding_party_person_photo
+  -#         = image_tag("pages/home/wedding/sample.jpg")
+  -#       .page-section__wedding_party_person_info
+  -#         .person_name
+  -#           = "Doreen Ng"
+  -#         .person_title
+  -#           = "Bridesmaid"

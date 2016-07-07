@@ -1,0 +1,107 @@
+en:
+  views:
+    templates:
+      party:
+        index:
+          new_rsvp: RSVP to Vivian and Nathan's Wedding!
+          change_rsvp: Change RSVP
+        new:
+          heading: RSVP to Vivian and Nathan's Wedding!
+          placeholder:
+            first_name: First Name
+            last_name: Last Name
+          labels:
+            email: Email
+            phone: Phone
+            address: Address
+            your_name: Your name
+            guests: Who's coming with you?
+          buttons:
+            add_guest: Add Guest
+            submit: Submit
+      index:
+        date: December 23, 2016
+        location: Hong Kong
+      wedding:
+        heading:
+        the_team:
+          -
+            full_name: Andrew Nunn
+            role: Best Man
+            image_file: andrew
+          -
+            full_name: Eric Low
+            role: Groomsman
+            image_file: eric
+          -
+            full_name: Byron Tseng
+            role: Groomsman, Brother of Groom
+            image_file: byron
+          -
+            full_name: Jordan Tseng
+            role: Groomsman, Brother of Groom
+            image_file: jordan
+          -
+            full_name: Kevin Kan
+            role: Groomsman
+            image_file: kevin
+          -
+            full_name: Chiaki Chan
+            role: Maid of Honor
+            image_file: chiaki
+          -
+            full_name: Peony Tang
+            role: Bridesmaid
+            image_file: peony
+          -
+            full_name: Ada Lau
+            role: Bridesmaid
+            image_file: ada
+          -
+            full_name: Doreen Ng
+            role: Bridesmaid
+            image_file: doreen
+          -
+            full_name: Hilda Tsang
+            role: Bridesmaid
+            image_file: hilda
+
+      events:
+        shared:
+          label:
+            time: Time
+            date: Date
+            address: Address
+            location: Location
+          text:
+            date: December 23, 2016
+        tea:
+          heading: Tea Ceremony
+          time: 9:30AM
+          location: Four Seasons Hotel
+          room: Victoria Room
+          address: 8 Finance Street
+          invitation: For invited relatives only
+        ceremony:
+          heading: Wedding Ceremony
+          time: 1:30PM
+          location: Bethanie Chapel
+          address: 139 Pok Fu Lam Road, Pok Fu Lam
+          invitation: For invited relatives and close friends only
+        reception:
+          heading: Reception
+          time: 6PM
+          location: Four Seasons Hotel
+          room: Grand Ballroom
+          address: 8 Finance Street
+          invitation: For invited guests only
+          shuttle: Shuttles will be provided from Bethanie Chapel
+  components:
+    shared:
+      navbar:
+        home: Home
+        party: Wedding Party
+        events: Events
+        photos: Gallery
+        transportation: Transportation
+        rsvp: RSVP

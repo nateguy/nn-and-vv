@@ -2,29 +2,40 @@
 @import "mixins/responsive";
 @import "mixins/adaptive";
 
-.page-section {
-  margin-top: 30px;
+.landing-title {
+  margin-top: 150px;
 
-  .page-section__heading {
-    text-align: center;
+  position: absolute;
+  left: 22%;
 
-    .page-section__heading-couple-name,
-    .page-section__heading-date,
-    .page-section__heading-location, {
+  .landing-title_container {
+
+    .landing-title_couple-name,
+    .landing-title_save_the_date, {
       display: inline-block;
       line-height: 1.2;
-      width: 100%;
     }
-    .page-section__heading-couple-name {
+    .landing-title_couple-name {
       font-size: 70px;
       @include font-family('Great Vibes', $important: true);
     }
 
-    .page-section__heading-date {
-      font-size: 30px;
-      font-family: garamond_premr_proregular;
+    .landing-title_save_the_date {
+      margin-top: 150px;
+      text-shadow: 2px 1px 4px rgba(255,255,255,1);
+      font-size: 16px;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+
+      span {
+        display: table-cell;
+        &.date {
+          text-align: right;
+        }
+      }
     }
-    .page-section__heading-location {
+    .landing-title_location {
       font-size: 19px;
       font-family: garamond_premr_proregular;
     }

@@ -2,36 +2,74 @@
 
 #page-parties-change,
 #page-parties-new {
+  $row-height: 40px;
   .btn.btn-primary {
     @include btn-primary();
   }
   .parties-new-form-container {
-    border-radius: 20px;
-    background-color: rgba(252,202,210,0.5);
-    width: 500px;
-    padding: 20px;
-
+    $row-width: 450px;
+    form {
+      margin-top: 10px;
+    }
+    .input {
+      max-width: $row-width;
+      margin-bottom: 5px;
+      input {
+        width: 100%;
+        border: 1px solid #777777;
+        border-radius: 4px;
+      }
+    }
+    input {
+      height: $row-height;
+      box-sizing: border-box;
+      background-color: rgba(255,255,255,0.9);
+    }
     .guest_list_title, label {
       color: #000000;
+      display: inline-block;
     }
 
     .guest_list {
       list-style-type: none;
       margin: 0;
+      padding: 0;
+      $input-separation: 5px;
 
       .guest-item {
-        display: table-row;
+        display: inline-block;
+        margin-bottom: 5px;
         input {
+          width: ($row-width - $input-separation)/2;
           display: block;
           float: left;
-          margin-right: 5px;
+          margin-right: $input-separation;
+          border: 1px solid #777777;
+          border-radius: 4px;
         }
       }
-    }
 
+      .btn-remove-guest {
+        height: $row-height;
+        @include btn-white();
+        font-size: 20px;
+      }
+
+    }
+    .btn-add-guest {
+      height: $row-height;
+      @include btn-white();
+      font-size: 20px;
+      margin-top: 10px;
+    }
     .parties-new-form-actions {
       margin-top: 10px;
       text-align: center;
+
+      input.btn {
+        font-size: 20px;
+        height: auto;
+      }
     }
   }
 

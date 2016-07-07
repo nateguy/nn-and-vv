@@ -8,3 +8,14 @@
   url(font-path('great_vibes.ttf')) format('truetype'); // Safari, Android, iOS
   // url(font-path('great_vibes/great_vibes.svg') + "#GreatVibes") format('svg'); // Legacy iOS
 }
+
+@font-face {
+  font-family: 'spinnaker';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font-path('spinnaker.eot')); // IE9 Compat Modes
+  src: url(font-path('spinnaker.eot') + "?#iefix") format('embedded-opentype'), // IE6-IE8
+  url(font-path('spinnaker.woff')) format('woff'), // Pretty Modern Browsers
+  url(font-path('spinnaker.ttf')) format('truetype'); // Safari, Android, iOS
+  // url(font-path('great_vibes/great_vibes.svg') + "#GreatVibes") format('svg'); // Legacy iOS
+}

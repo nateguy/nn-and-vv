@@ -6,7 +6,7 @@ gem 'rails', '4.1.15'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Bootstrap SASS version
-gem 'bootstrap-sass', '~> 2.3'
+gem 'bootstrap-sass', '>= 3.0.0'
 # Better Bootstrap Modal
 gem 'bootstrap-modal-rails'
 # Make select look like button
@@ -40,12 +40,16 @@ gem 'simple_form'
 gem 'haml-rails'
 
 gem 'i18n'
-
+# The core
+gem 'i18n'
+# A set of common locale data and translations
+gem 'rails-i18n'
 # Export translations to JS
 gem 'i18n-js', '>= 3.0.0.rc7'
 # Export routes to JS
 gem 'js-routes'
 
+gem 'font-awesome-rails'
 ### App config
 gem 'settingslogic'
 

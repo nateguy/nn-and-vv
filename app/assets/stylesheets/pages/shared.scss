@@ -1,9 +1,13 @@
+@import "mixins/font-family";
+
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  @include font-family('spinnaker', $important: true);
+  // font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+
 }
 
 .page-container {
@@ -12,4 +16,19 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+}
+
+.page-section {
+  width: 550px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(252,202,210,0.8);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section-no-background {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

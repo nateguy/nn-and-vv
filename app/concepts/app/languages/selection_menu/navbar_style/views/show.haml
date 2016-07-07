@@ -1,0 +1,17 @@
+-# `.dropdown` is required for dropdown JS from Bootstrap 2.3
+.cell--app--languages--selection-menu--navbar-style.dropdown
+  -# `.dropdown-toggle` is required for dropdown JS from Bootstrap 2.3
+  %a.dropdown-toggle{data: {toggle: "dropdown"}, href: "#"}
+    %span.cell--app--languages--selection-menu--navbar-style__dropdown-toggle__text
+      %span.current= t("i18n.current_langauage.short")
+      = "/"
+      = t("i18n.current_langauage.other")
+      %i.fa.fa-angle-down
+  -# `.dropdown-menu` is required for dropdown JS from Bootstrap 2.3
+  %ul.dropdown-menu
+    - I18n.available_locales.each do |locale|
+      %li.cell--app--languages--selection-menu--navbar-style__dropdown-menu-item
+        -# `rel` is set to `alternate`, since it's "translated"
+        -# http://www.w3schools.com/tags/att_a_rel.asp
+        = link_to current_url_for_locale(locale), rel: "alternate" do
+          = t("i18n.languages.#{locale}")

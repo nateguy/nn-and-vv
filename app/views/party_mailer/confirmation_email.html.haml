@@ -1,1 +1,14 @@
-= "test email"
+!!! 5
+%html
+  %head
+    %meta{content: 'text/html; charset=UTF-8', "http-equiv" => "Content-Type"}
+  %body
+    %p
+      = "This is to confirm that you have RSVP'ed to Vivian and Nathan's Wedding"
+    %p
+      = "Your RSVP reference code is #{@party.reference_code}"
+    %p
+      = "To change your registration, please click"
+      = link_to parties_path do
+        = "here"
+      = "and enter your RSVP reference code"

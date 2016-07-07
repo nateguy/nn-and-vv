@@ -7,10 +7,10 @@ window.App.Modal ||= {}
 #                  This is set to true when container_or_content has only one top node and
 #                  has `.modal-header` and `.modal-body` already
 window.App.Modal.showModalWithContent = (container_or_content, options = {}) ->
-
+  console.log "show with content"
   opts = $.extend({}, {customContent: false, class: ''}, options)
 
-  $modal = $('<div></div>').addClass('modal hide fade modal-overflow-mobile-fix')
+  $modal = $('<div></div>').addClass('modal fade')
 
 
   $container_or_content = $(container_or_content)
@@ -37,6 +37,7 @@ window.App.Modal.showModalWithContent = (container_or_content, options = {}) ->
   if opts.customContent
     $modal.html($content)
   else
+    console.log "header"
     $modalHead = $('<div></div>').addClass('modal-header clearfix')
     .append(
         $('<button></button>')
@@ -49,7 +50,9 @@ window.App.Modal.showModalWithContent = (container_or_content, options = {}) ->
     .addClass('modal-body')
     .html($content)
 
-    $modal.html($modalHead).append($modalBody)
+
+    $modal.html($modalDialog).html($modalHead).append($modalBody)
+
 
   extraClasses = opts.class
   if extraClasses? && extraClasses.length > 0
@@ -57,12 +60,3 @@ window.App.Modal.showModalWithContent = (container_or_content, options = {}) ->
 
   $modal
   .modal()
-
-  # HACK trigger BS 3 event
-  e = $.Event('shown.bs.modal')
-  $modal.trigger(e)
-  $modal.on 'hide', ->
-    e = $.Event('hidden.bs.modal')
-    $modal.trigger(e)
-
-  $modal

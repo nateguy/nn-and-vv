@@ -22,7 +22,8 @@ $body.on 'click', '.btn-add-guest', (e) ->
   $element_first_name_input.attr("placeholder", "First Name")
   $element_first_name_input.attr("multiple", true)
 
-  $element_close_btn = $(document.createElement('button')).addClass('btn btn-remove-guest').text("X")
+  $element_close = $(document.createElement('i')).addClass('fa fa-times')
+  $element_close_btn = $(document.createElement('button')).addClass('btn btn-remove-guest').append($element_close)
   $element.append($element_last_name_input)
   $element.append($element_first_name_input)
   $element.append($element_close_btn)

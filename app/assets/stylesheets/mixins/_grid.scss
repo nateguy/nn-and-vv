@@ -1,0 +1,47 @@
+// Trying to do column thing with mixin not class
+// Prepend all mixin names with `grid`
+
+// Should get this from variables but might take too long to regenerate
+$default-grid-container-columns: 12 !default;
+$column: 60px;     // Column Width
+$gutter: 20px;     // Gutter Width
+
+$grid-columns: 12;  // Total Columns For Main Container
+
+
+@mixin grid-row {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+
+  // @see http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best
+  // @see http://nicolasgallagher.com/better-float-containment-in-ie/
+  *zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+
+  // Do this yourself
+  // display: block;
+}
+
+@mixin grid-span-columns($columns, $container-columns: $default-grid-container-columns, $use-gutter: true) {
+  float: left;
+
+  @if $use-gutter {
+    // Like bootstrap, unlike neat which use last-child
+    margin-left: flex-gutter($container-columns);
+    width: flex-grid($columns, $container-columns);
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  @else {
+    width: percentage($columns / $container-columns);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

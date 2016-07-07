@@ -1,8 +1,8 @@
-.page-section
-  .page-section__heading
-    .page-section__heading-couple-name
-      = "Vivian and Nathan"
-    .page-section__heading-date
-      = "December 23, 2016"
-    .page-section__heading-location
-      = "Hong Kong"
+.landing-title
+  .landing-title_container
+    .landing-title_couple-name
+      = image_tag("pages/home/index/vivian-and-nathan.png")
+    .landing-title_save_the_date
+      %span= "Save the date"
+      %span= image_tag("pages/home/index/save-the-date_ring.png")
+      %span.date= I18n.t("views.templates.index.date")

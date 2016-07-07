@@ -10,8 +10,12 @@ class Party < ActiveRecord::Base
   validates_format_of :email,
                       with: AppConfig.models.defaults.email.format.with_regexp,
                       allow_blank: true, if: :email_changed?
+  validates_uniqueness_of :email
+  validates_uniqueness_of :reference_code
+
   def assign_random_reference_code
-    self.reference_code = Random.rand(1000..10000)
+    all_existing_reference_codes = Party.pluck(:reference_code).map{|c|c.to_i}
+    self.reference_code = ([*1000..10000] - all_existing_reference_codes).sample
   end
 
   attr_accessor :last_names
@@ -20,7 +24,6 @@ class Party < ActiveRecord::Base
   #attr_accessor :guests
 
   def assign_guests!
-    puts last_names
     last_names.each_with_index do |last_name, index|
       first_name = first_names[index]
       if last_name.present? && first_name.present?
@@ -29,7 +32,6 @@ class Party < ActiveRecord::Base
     end
 
     guests.each do |guest|
-      puts guest.last_name
       unless last_names.include?(guest.last_name)
         guest.destroy!
       end

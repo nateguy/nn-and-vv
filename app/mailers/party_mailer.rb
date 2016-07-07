@@ -1,9 +1,8 @@
 class PartyMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "nateguy@gmail.com"
 
   def confirmation_email(party)
-    puts party.email
     @party = party
-    mail(to: @party.email, subject: 'test')
+    mail(to: @party.email, subject: "RSVP Confirmation to Vivian and Nate's Wedding")
   end
 end

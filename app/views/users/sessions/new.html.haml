@@ -1,0 +1,9 @@
+.page-section
+  %h4
+    = "Sign In"
+  = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .form-inputs
+      = f.input :email, required: true, autofocus: true
+      = f.input :password, required: true
+
+      = f.button :submit, "Log in"

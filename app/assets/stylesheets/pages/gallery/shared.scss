@@ -1,0 +1,28 @@
+.cell-gallery {
+  .carousel-inner {
+    .item {
+      height: 540px;
+
+      img {
+        max-height: 540px;
+
+      }
+    }
+  }
+  .carousel-indicators {
+
+    li {
+      display: inline-block;
+      float: none;
+
+    }
+  }
+  .carousel-control {
+    font-size: 30px;
+
+    i {
+      top: 50%;
+      position: absolute;
+    }
+  }
+}

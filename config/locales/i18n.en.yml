@@ -1,0 +1,8 @@
+en:
+  i18n:
+    current_langauage:
+      short: "Eng"
+      other: "中文"
+    languages:
+      en: "English"
+      zh-TW: "中文"

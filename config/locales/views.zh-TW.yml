@@ -1,0 +1,103 @@
+zh-TW:
+  views:
+    templates:
+      party:
+        new:
+          heading: 敬請回复
+          placeholder:
+            first_name: 名字
+            last_name: 姓
+          labels:
+            email: 電子郵件
+            phone: 電話
+            address: 地址
+            your_name: 你的名字？
+            guests: 誰會與你一同到來？
+          buttons:
+            add_guest: 增加賓客
+            submit: 提交
+      index:
+        date: 2016年12月23日
+        location: 香港
+      events:
+        shared:
+          label:
+            time: 時間
+            date: 日期
+            address: 地址
+            location: 地點
+          text:
+            date: 2016年12月23日
+        tea:
+          heading: 茶道婚禮
+          time: 9:30AM
+          location: 香港四季酒店
+          room: 維港廳
+          address: 中環區金融街8號
+          invitation: For invited relatives only
+        ceremony:
+          heading: 婚禮
+          time: 1:30PM
+          location: 伯大尼校園
+          address: 薄扶林道139號
+          invitation: For invited relatives and close friends only
+        reception:
+          heading: 婚宴
+          time: 6PM
+          location: 香港四季酒店
+          address: 中環區金融街8號
+          room: 四季大禮堂
+          invitation: For invited guests only
+          shuttle: Shuttles will be provided from Bethanie Chapel
+      wedding:
+        heading:
+        the_team:
+          -
+            full_name: 林安祖
+            role: 伴郎
+            image_file: andrew
+          -
+            full_name: Eric Low
+            role: 兄弟
+            image_file: eric
+          -
+            full_name: 曾繁盛
+            role: 兄弟, 新郎弟弟
+            image_file: byron
+          -
+            full_name: 曾繁昌
+            role: 兄弟, 新郎弟弟
+            image_file: jordan
+          -
+            full_name: Kevin Kan
+            role: 兄弟
+            image_file: kevin
+          -
+            full_name: Chiaki Chan
+            role: 伴娘
+            image_file: chiaki
+          -
+            full_name: Peony Tang
+            role: 姊妹
+            image_file: peony
+          -
+            full_name: Ada Lau
+            role: 姊妹
+            image_file: ada
+          -
+            full_name: Doreen Ng
+            role: 姊妹
+            image_file: doreen
+          -
+            full_name: Hilda Tsang
+            role: 姊妹
+            image_file: hilda
+  components:
+    shared:
+      navbar:
+        home: 主頁
+        party: 兄弟及姊妹團
+        events: 婚宴詳情
+        photos: 照片
+        transportation: 交通
+        rsvp: 敬請回复

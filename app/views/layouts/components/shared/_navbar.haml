@@ -1,22 +1,30 @@
-.nav-container
-  %nav.main-navbar.navbar.navbar-static-top
-    %ul.nav
-      %li.navbar-item
-        = link_to localized_root_path do
-          = "Home"
-      %li.navbar-item
-        = link_to wedding_path do
-          = "Wedding Party"
-      %li.navbar-item
-        = link_to ceremony_path do
-          = "Information"
-
-      %li.navbar-item
-        = link_to photos_path do
-          = "Photos"
-      %li.navbar-item
-        = link_to transportation_path do
-          = "Transportation"
-      %li.navbar-item
-        = link_to parties_path do
-          = "RSVP"
+%nav.navbar.nav-inverse
+  .container
+    .navbar-header
+      %a.btn.navbar-toggle{data: {toggle: 'collapse', target: '#myNavbar'}}
+        %i.fa.fa-bars
+    .collapse.navbar-collapse#myNavbar
+      %ul.nav.navbar-nav
+        %li.navbar-item
+          = link_to localized_root_path do
+            = I18n.t("components.shared.navbar.home")
+        %li.navbar-item
+          = link_to wedding_path do
+            = I18n.t("components.shared.navbar.party")
+        %li.navbar-item
+          = link_to events_path do
+            = I18n.t("components.shared.navbar.events")
+        %li.navbar-item
+          = link_to photos_path do
+            = I18n.t("components.shared.navbar.photos")
+        %li.navbar-item
+          = link_to new_party_path do
+            = I18n.t("components.shared.navbar.rsvp")
+        - if user_signed_in?
+          %li.navbar-item
+            = link_to destroy_user_session_path, method: :delete do
+              = "Sign Out"
+        %li.navbar-item
+          = concept("app/languages/selection_menu/navbar_style/cell",
+              valid_locale_from_params: valid_locale_from_params,
+            ).call

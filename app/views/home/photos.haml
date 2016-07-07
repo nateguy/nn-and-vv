@@ -1,0 +1,6 @@
+- set_body_id('page-home-photos')
+.page-section
+  = concept('gallery/default/cell',
+      photo_links: @photo_links,
+      thumbnail_photo_links: @thumbnail_photo_links,
+    ).call

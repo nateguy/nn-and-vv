@@ -1,6 +1,7 @@
 - set_body_id('page-parties-index')
-= link_to new_party_path, class: "btn btn-primary" do
-  = "New reservation"
+.page-section-no-background
+  = link_to new_party_path, class: "btn btn-primary" do
+    = "New RSVP"
 
-= link_to load_parties_path, class: "btn btn-primary js-load-reservation" do
-  = "load saved reservation"
+  = link_to load_parties_path, class: "btn btn-primary js-load-reservation" do
+    = "Change RSVP"

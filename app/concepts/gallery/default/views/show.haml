@@ -1,0 +1,19 @@
+#cell-gallery.cell-gallery.carousel.slide{data: {ride: "carousel"}}
+  %ol.carousel-indicators
+    - photo_links.each_with_index do |photo_link, index|
+      %li{data: {target: "#cell-gallery", slide_to: index}, class: (index == 0 ? 'active' : '')}
+
+  .carousel-inner{role: "listbox"}
+    - photo_links.each_with_index do |photo_link, index|
+      .item{class: (index == 0 ? 'active' : '')}
+        = link_to show_photo_path, class: "js-load-image", data: {image_path: asset_path(photo_link[0])} do
+          - if photo_link[1]
+            = image_tag(photo_link[1])
+          - else
+            = image_tag(photo_link[0])
+
+  %a.left.carousel-control{href: "#cell-gallery", role: "button", data: {slide: "prev"}}
+    %i.fa.fa-chevron-left{aria_hidden: "true"}
+
+  %a.right.carousel-control{href: "#cell-gallery", role: "button", data: {slide: "next"}}
+    %i.fa.fa-chevron-right{aria_hidden: "true"}

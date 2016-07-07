@@ -1,0 +1,67 @@
+
+#page-home-events {
+  .page-section {
+    background-color: transparent;
+  }
+  .nav-tabs {
+    li a {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      font-size: 16px;
+    }
+
+    li.active a {
+      font-weight: bold;
+      background-color: rgba(252,202,210,0.8);
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid rgba(252,202,210,0.8);
+    }
+  }
+  .tab-content {
+    background-color: rgba(252,202,210,0.8);
+    padding: 10px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  .tab-section-image {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    img {
+      width: 100%;
+    }
+  }
+  .tab-section-text {
+    width: 378px;
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: top;
+    h4 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+    .page-section__events_notes {
+      font-size: 16px;
+      line-height: 1.3;
+      font-style: italic;
+    }
+    .page-section__events_text {
+      font-size: 16px;
+      line-height: 1.3;
+
+      span.sub-header {
+        font-weight: bold;
+      }
+    }
+  }
+  .page-section__events_map {
+    margin-top: 20px;
+    #event_map {
+      height: 200px;
+      width: 100%;
+    }
+  }
+}

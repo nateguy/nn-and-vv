@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
 
+  devise_for :users,
+              controllers: {
+                  sessions: 'users/sessions',
+                  registrations: 'users/registrations',
+                  passwords: 'users/passwords',
+              }
   root to: 'home#index', as: :localized_root
   get 'photos' => 'home#photos'
   get 'wedding' => 'home#wedding'
-  get 'ceremony' => 'home#ceremony'
-  get 'transportation' => 'home#transportation'
+  get 'events' => 'home#events'
+  get 'show_photo' => 'home#show_photo'
 
   resources :parties, only: [:index, :new, :create, :update] do
     collection do
@@ -12,6 +18,8 @@ Rails.application.routes.draw do
       get 'change' => 'parties#change'
     end
   end
+
+  resources :admin, only: [:index]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

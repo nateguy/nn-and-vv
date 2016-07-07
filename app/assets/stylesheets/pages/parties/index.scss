@@ -1,5 +1,18 @@
+@import "mixins/buttons";
+
 #page-parties-index {
   .main-container {
-
+    .page-section-no-background {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    .btn-primary {
+      @include btn-primary();
+    }
+    .btn {
+      width: 150px;
+      margin: 10px;
+    }
   }
 }

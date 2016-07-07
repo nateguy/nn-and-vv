@@ -9,3 +9,13 @@
     background-color: darken(#E5ACB6, 5%) !important;
   }
 }
+
+@mixin btn-white {
+  border: 1px solid #cccccc !important;
+  background: none;
+  background-color: #FFFFFF !important;
+  color: #555555 !important;
+  &:hover {
+    background-color: darken(#cccccc, 5%) !important;
+  }
+}

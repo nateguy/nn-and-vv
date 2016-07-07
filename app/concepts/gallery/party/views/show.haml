@@ -1,0 +1,23 @@
+#cell-gallery-party.cell-gallery-party.carousel.slide{data: {ride: "carousel"}}
+  .carousel-inner{role: "listbox"}
+    - wedding_party_team.each_with_index do |member, index|
+      .item{class: (index == 0 ? 'active' : '')}
+        .image_container
+          = image_tag("/assets/pages/home/wedding/#{member.fetch(:image_file)}.jpg")
+        .text_container
+          .text_container_name
+            = member.fetch(:full_name)
+          .text_container_title
+            = member.fetch(:role)
+
+  %ol.carousel-indicators
+    - wedding_party_team.each_with_index do |member, index|
+      %li{data: {target: "#cell-gallery-party", slide_to: index}, class: (index == 0 ? 'active' : '')}
+        = image_tag("/assets/pages/home/wedding/#{member.fetch(:image_file)}.jpg")
+
+  .carousel-controls
+    %a.left.carousel-control{href: "#cell-gallery-party", role: "button", data: {slide: "prev"}}
+      %i.fa.fa-chevron-left{aria_hidden: "true"}
+
+    %a.right.carousel-control{href: "#cell-gallery-party", role: "button", data: {slide: "next"}}
+      %i.fa.fa-chevron-right{aria_hidden: "true"}

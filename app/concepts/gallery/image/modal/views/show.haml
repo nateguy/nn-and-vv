@@ -1,0 +1,9 @@
+.cell-parties-image-modal
+  .modal-dialog{role: 'document'}
+    .modal-content
+      .modal-header
+        %button.btn.close{data: {dismiss: 'modal'}, aria: {label: "close"}}
+          %span{aria: {hidden: "true"}}
+            %i.fa.fa-times
+      .modal-body
+        = image_tag image_path
