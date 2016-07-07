@@ -53,7 +53,7 @@ zh-TW:
         heading:
         the_team:
           -
-            full_name: 林安祖
+            full_name: Andrew
             role: 伴郎
             image_file: andrew
           -
@@ -61,27 +61,27 @@ zh-TW:
             role: 兄弟
             image_file: eric
           -
-            full_name: 曾繁盛
+            full_name: Byron
             role: 兄弟, 新郎弟弟
             image_file: byron
           -
-            full_name: 曾繁昌
+            full_name: Jordan
             role: 兄弟, 新郎弟弟
             image_file: jordan
           -
-            full_name: Kevin Kan
+            full_name: Kevin
             role: 兄弟
             image_file: kevin
           -
-            full_name: Chiaki Chan
+            full_name: Chiaki
             role: 伴娘
             image_file: chiaki
           -
-            full_name: Peony Tang
+            full_name: Peony
             role: 姊妹
             image_file: peony
           -
-            full_name: Ada Lau
+            full_name: Ada
             role: 姊妹
             image_file: ada
           -

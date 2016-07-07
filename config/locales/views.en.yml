@@ -26,43 +26,43 @@ en:
         heading:
         the_team:
           -
-            full_name: Andrew Nunn
+            full_name: Andrew
             role: Best Man
             image_file: andrew
           -
-            full_name: Eric Low
+            full_name: Eric
             role: Groomsman
             image_file: eric
           -
-            full_name: Byron Tseng
+            full_name: Byron
             role: Groomsman, Brother of Groom
             image_file: byron
           -
-            full_name: Jordan Tseng
+            full_name: Jordan
             role: Groomsman, Brother of Groom
             image_file: jordan
           -
-            full_name: Kevin Kan
+            full_name: Kevin
             role: Groomsman
             image_file: kevin
           -
-            full_name: Chiaki Chan
+            full_name: Chiaki
             role: Maid of Honor
             image_file: chiaki
           -
-            full_name: Peony Tang
+            full_name: Peony
             role: Bridesmaid
             image_file: peony
           -
-            full_name: Ada Lau
+            full_name: Ada
             role: Bridesmaid
             image_file: ada
           -
-            full_name: Doreen Ng
+            full_name: Doreen
             role: Bridesmaid
             image_file: doreen
           -
-            full_name: Hilda Tsang
+            full_name: Hilda
             role: Bridesmaid
             image_file: hilda
 
