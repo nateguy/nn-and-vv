@@ -40,4 +40,20 @@
       font-family: garamond_premr_proregular;
     }
   }
+
+  @include mobile-only {
+    left: 0;
+    margin-top: 38px;
+    .landing-title_container {
+      .landing-title_couple-name {
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+      .landing-title_save_the_date {
+        margin-top: 20px;
+      }
+    }
+  }
 }

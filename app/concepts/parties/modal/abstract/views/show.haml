@@ -2,14 +2,15 @@
   .modal-dialog{role: 'document'}
     .modal-content
       .modal-header
-        = "Please Enter your RSVP reference code"
+        = "Enter RSVP reference code"
         %button.btn.close{data: {dismiss: 'modal'}, aria: {label: "close"}}
           %span{aria: {hidden: "true"}}
             %i.fa.fa-times
       .modal-body
         .cell-parties-modal--form-body
-          = "You can find your RSVP reference code in your contact email. If you have lost this email, please email nateguy@gmail.com"
           = simple_form_for(party, url: change_parties_path, method: :get,
               html: {data: {method: :get}}) do |f|
             = f.input :reference_code, label: false, input_html: {tabindex: 1}
             = f.button :submit, "Submit"
+        .cell-parties-modal--form-body-text
+          = "You can find your RSVP reference code in your contact email. If you have lost this email, please email nateguy@gmail.com"

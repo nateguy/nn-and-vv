@@ -1,4 +1,5 @@
 @import "mixins/font-family";
+@import "mixins/responsive";
 
 .navbar {
 
@@ -56,43 +57,11 @@
   }
 }
 
-//
-// .nav-container {
-//   text-align: center;
-//   .main-navbar {
-//
-//     margin-top: 25px;
-//     display: inline-block;
-//
-//     .cell--app--languages--selection-menu--navbar-style > a,
-//     .nav > li > a {
-//       color: #000000 !important;
-//       padding: 0 5px !important;
-//       display: table-cell;
-//       vertical-align: middle;
-//       font-size: 1em;
-//       @include font-family('spinnaker', $important: true);
-//       text-transform: uppercase;
-//       text-shadow: 1px 1px 5px rgba(100,100,100,0.3);
-//       text-decoration: none;
-//
-//       &:hover {
-//         border: 1px solid #000000;
-//         border-radius: 4px;
-//       }
-//     }
-//
-//     .navbar-item {
-//       height: 30px;
-//       line-height: 30px;
-//       vertical-align: middle;
-//       position: relative;
-//       float: left;
-//       list-style: none;
-//     }
-//     .cell--app--languages--selection-menu--navbar-style {
-//       display: inline-block;
-//     }
-//   }
-//
-// }
+@include mobile-only {
+  .container {
+    .navbar-header {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}

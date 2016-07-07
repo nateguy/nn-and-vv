@@ -1,3 +1,4 @@
+@import "mixins/responsive";
 
 #page-home-events {
   .page-section {
@@ -62,6 +63,35 @@
     #event_map {
       height: 200px;
       width: 100%;
+    }
+  }
+
+  @include mobile-only {
+    .page-section {
+      .tab-section-image {
+        display: none;
+      }
+      .nav.nav-tabs {
+        li {
+          width: 100%;
+          margin-bottom: 2px;
+          a {
+            background-color: #ffffff;
+            margin: 0;
+            border-radius: 4px;
+          }
+          &.active {
+            a {
+              border: 2px solid #555555;
+            }
+          }
+        }
+      }
+      .tab-pane {
+        .tab-section-text {
+          width: auto;
+        }
+      }
     }
   }
 }
