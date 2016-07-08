@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.15'
@@ -36,6 +36,7 @@ gem 'simple_form'
 
 gem 'haml-rails'
 
+
 # The core
 gem 'i18n'
 # A set of common locale data and translations
@@ -51,6 +52,7 @@ gem 'settingslogic'
 
 group :production do
 	gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
