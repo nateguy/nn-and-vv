@@ -10,6 +10,9 @@
 }
 
 .cell-parties-modal--form-body {
+  display: inline-block;
+  width: 100%;
+  
   input {
     float: left;
     height: 30px;

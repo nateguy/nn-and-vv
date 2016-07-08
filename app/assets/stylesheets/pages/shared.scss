@@ -42,4 +42,8 @@ body {
   .page-section {
     width: auto;
   }
+  .page-container {
+    min-height: 800px;
+    background-image: image-url('background-mobile.jpg');
+  }
 }

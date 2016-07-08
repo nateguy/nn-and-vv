@@ -16,10 +16,8 @@ class HomeController < ApplicationController
         photo_link.gsub("app/assets/images",'/assets').gsub("/photos/","/photos/thumbnails/")
 
       if @photo_thumbnail_links.include?(thumbnail_path)
-        puts "tbp"
         link_array.push(thumbnail_path)
       else
-        puts "ntnp"
         link_array.push(original_path)
       end
       link_array
