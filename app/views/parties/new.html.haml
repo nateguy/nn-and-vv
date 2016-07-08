@@ -4,7 +4,7 @@
     %h3
       = t('views.templates.party.new.heading')
     = link_to load_parties_path, class: "js-load-reservation" do
-      = "Update saved RSVP details"
+      = t('views.templates.party.new.links.update')
 
     = simple_form_for(@party) do |f|
 

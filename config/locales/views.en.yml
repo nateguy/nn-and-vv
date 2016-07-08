@@ -2,9 +2,6 @@ en:
   views:
     templates:
       party:
-        index:
-          new_rsvp: RSVP to Vivian and Nathan's Wedding!
-          change_rsvp: Change RSVP
         new:
           heading: RSVP to Vivian and Nathan's Wedding!
           placeholder:
@@ -16,9 +13,12 @@ en:
             address: Address
             your_name: Your name
             guests: Who's coming with you?
+            guests_all: Who's coming?
           buttons:
             add_guest: Add Guest
             submit: Submit
+          links:
+            update: Update saved RSVP details
       index:
         date: December 23, 2016
         location: Hong Kong

@@ -14,7 +14,7 @@
         = f.input(:address,
             required: true,
             label: t('views.templates.party.new.labels.address'))
-        = t('views.templates.party.new.labels.guests')
+        = t('views.templates.party.new.labels.guests_all')
         %ul.guest_list
           - @party.guests.each_with_index do |guest, index|
             %li.guest-item

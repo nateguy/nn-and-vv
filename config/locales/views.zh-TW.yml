@@ -13,9 +13,12 @@ zh-TW:
             address: 地址
             your_name: 你的名字？
             guests: 誰會與你一同到來？
+            guests_all: 賓客
           buttons:
             add_guest: 增加賓客
             submit: 提交
+          links:
+            update: Update saved RSVP details
       index:
         date: 2016年12月23日
         location: 香港
@@ -57,7 +60,7 @@ zh-TW:
             role: 伴郎
             image_file: andrew
           -
-            full_name: Eric Low
+            full_name: Eric
             role: 兄弟
             image_file: eric
           -
@@ -85,11 +88,11 @@ zh-TW:
             role: 姊妹
             image_file: ada
           -
-            full_name: Doreen Ng
+            full_name: Doreen
             role: 姊妹
             image_file: doreen
           -
-            full_name: Hilda Tsang
+            full_name: Hilda
             role: 姊妹
             image_file: hilda
   components:
