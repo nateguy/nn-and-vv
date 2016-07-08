@@ -7,7 +7,6 @@ window.App.Modal ||= {}
 #                  This is set to true when container_or_content has only one top node and
 #                  has `.modal-header` and `.modal-body` already
 window.App.Modal.showModalWithContent = (container_or_content, options = {}) ->
-  console.log "show with content"
   opts = $.extend({}, {customContent: false, class: ''}, options)
 
   $modal = $('<div></div>').addClass('modal fade')
