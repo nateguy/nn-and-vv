@@ -17,14 +17,13 @@ Rails.application.configure do
   # Email stuff
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:        'smtp.gmail.com',
+      address:        'smtp.sendgrid.net',
       port:           587,
-      user_name:      'nateguy',
-      domain:         'vivianplusnate.herokuapp.com',
-      password:       'srtc6390',
+      user_name:      ENV['SENDGRID_USERNAME'],
+      domain:         'herokuapp.com',
+      password:       ENV['SENDGRID_PASSWORD'],
       authentication: 'plain',
       enable_starttls_auto: true,
-      openssl_verify_mode: 'none'
   }
 
   config.action_mailer.perform_deliveries = true
