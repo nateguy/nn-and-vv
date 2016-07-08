@@ -3,6 +3,8 @@ class PartyMailer < ActionMailer::Base
 
   def confirmation_email(party)
     @party = party
-    mail(to: @party.email, subject: "RSVP Confirmation to Vivian and Nate's Wedding")
+    @guest_list_raw = @party&.guests&.pluck(:first_name)&.to_sentence
+
+    mail(to: @party.email, subject: "See you at Vivian & Nate's Wedding - December 23, 2016!")
   end
 end

@@ -4,11 +4,12 @@
     %meta{content: 'text/html; charset=UTF-8', "http-equiv" => "Content-Type"}
   %body
     %p
-      = "This is to confirm that you have RSVP'ed to Vivian and Nathan's Wedding"
+      = "Dear #{@guest_list_raw}"
     %p
-      = "Your RSVP reference code is #{@party.reference_code}"
+      = "Thanks for RSVP'ing and we look forward to seeing you in December! You can contact Nathan (nateguy@gmail.com) or Vivian (vivianlowc@hotmail.com) if you have any questions in the meantime."
     %p
-      = "To change your registration, please click"
+      = "In case you need to change your RSVP details, go to this"
       = link_to parties_path do
-        = "here"
+        = "link"
       = "and enter your RSVP reference code"
+      %b="#{@party.reference_code}"
