@@ -3,30 +3,30 @@
   .parties-new-form-container
     - if @party.present?
       %h3
-        = "Update RSVP Details"
+        = t('views.templates.party.headings.saved')
       = simple_form_for(@party) do |f|
         = f.input(:email,
             required: true,
-            label: t('views.templates.party.new.labels.email'))
+            label: t('views.templates.party.labels.email'))
         = f.input(:phone,
             required: true,
-            label: t('views.templates.party.new.labels.phone'))
+            label: t('views.templates.party.labels.phone'))
         = f.input(:address,
             required: true,
-            label: t('views.templates.party.new.labels.address'))
-        = t('views.templates.party.new.labels.guests_all')
+            label: t('views.templates.party.labels.address'))
+        = t('views.templates.party.labels.guests_all')
         %ul.guest_list
           - @party.guests.each_with_index do |guest, index|
             %li.guest-item
               = f.input_field(:last_names,
                   multiple: true,
-                  placeholder: t('views.templates.party.new.placeholder.last_name'),
+                  placeholder: t('views.templates.party.placeholder.last_name'),
                   label: false,
                   value: guest.last_name,
                 )
               = f.input_field(:first_names,
                   multiple: true,
-                  placeholder: t('views.templates.party.new.placeholder.first_name'),
+                  placeholder: t('views.templates.party.placeholder.first_name'),
                   label: false,
                   value: guest.first_name,
                 )
@@ -34,11 +34,11 @@
                 %button.btn.btn-remove-guest
                   %i.fa.fa-times
         %button.btn.btn-add-guest
-          = t('views.templates.party.new.buttons.add_guest')
+          = t('views.templates.party.buttons.add_guest')
         .parties-new-form-actions
           = f.button :submit,
               class: "btn-primary",
-              value: t('views.templates.party.new.buttons.submit')
+              value: t('views.templates.party.buttons.submit')
     - else
       %h3
-        = "Invalid code"
+        = t('views.templates.party.headings.invalid')

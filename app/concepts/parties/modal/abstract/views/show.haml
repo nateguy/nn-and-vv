@@ -2,7 +2,7 @@
   .modal-dialog{role: 'document'}
     .modal-content
       .modal-header
-        = "Enter RSVP reference code"
+        = t('concept.parties.modal.header')
         %button.btn.close{data: {dismiss: 'modal'}, aria: {label: "close"}}
           %span{aria: {hidden: "true"}}
             %i.fa.fa-times
@@ -13,5 +13,5 @@
             = f.input :reference_code, label: false, input_html: {tabindex: 1}
             = f.button :submit, "Submit"
         .cell-parties-modal--form-body-text
-          = "You can find your RSVP reference code in your contact email. If you have lost this email, please email"
-          = mail_to 'nateguy@gmail.com'
+          %span= t('concept.parties.modal.label')
+          %span= mail_to 'nateguy@gmail.com'

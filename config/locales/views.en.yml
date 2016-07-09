@@ -2,23 +2,25 @@ en:
   views:
     templates:
       party:
-        new:
-          heading: RSVP to Vivian and Nathan's Wedding!
-          placeholder:
-            first_name: First Name
-            last_name: Last Name
-          labels:
-            email: Email
-            phone: Phone
-            address: Address
-            your_name: Your name
-            guests: Who's coming with you?
-            guests_all: Who's coming?
-          buttons:
-            add_guest: Add Guest
-            submit: Submit
-          links:
-            update: Update saved RSVP details
+        headings:
+          new: RSVP to Vivian and Nathan's Wedding!
+          saved: Update RSVP Details
+          invalid: Invalid RSVP code
+        placeholder:
+          first_name: First Name
+          last_name: Last Name
+        labels:
+          email: Email
+          phone: Phone
+          address: Address
+          your_name: Your name
+          guests: Who's coming with you?
+          guests_all: Who's coming?
+        buttons:
+          add_guest: Add Guest
+          submit: Submit
+        links:
+          update: Update saved RSVP details
       index:
         date: December 23, 2016
         location: Hong Kong

@@ -4,12 +4,12 @@
     %meta{content: 'text/html; charset=UTF-8', "http-equiv" => "Content-Type"}
   %body
     %p
-      = "Dear #{@guest_list_raw}"
+      = t('mailer.parties.dear', name: guest_list)
     %p
-      = "Thanks for RSVP'ing and we look forward to seeing you in December! You can contact Nathan (nateguy@gmail.com) or Vivian (vivianlowc@hotmail.com) if you have any questions in the meantime."
+      = t('mailer.parties.thank_you')
     %p
-      = "In case you need to change your RSVP details, go to this"
+      = t('mailer.parties.in_case')
       = link_to parties_path do
-        = "link"
-      = "and enter your RSVP reference code"
-      %b="#{@party.reference_code}"
+        = t('mailer.parties.link')
+      = t('mailer.parties.enter_code')
+      %b= party.reference_code

@@ -13,15 +13,12 @@ class Party < ActiveRecord::Base
   validates_uniqueness_of :email
   validates_uniqueness_of :reference_code
 
-  def assign_random_reference_code
-    all_existing_reference_codes = Party.pluck(:reference_code).map{|c|c.to_i}
-    self.reference_code = ([*1000..10000] - all_existing_reference_codes).sample
-  end
-
   attr_accessor :last_names
   attr_accessor :first_names
 
-  #attr_accessor :guests
+  def guest_list
+    guests&.pluck(:first_name)&.to_sentence
+  end
 
   def assign_guests!
     last_names.each_with_index do |last_name, index|
@@ -37,4 +34,11 @@ class Party < ActiveRecord::Base
       end
     end
   end
+
+  def assign_random_reference_code
+    all_existing_reference_codes = Party.pluck(:reference_code).map{|c|c.to_i}
+    self.reference_code = ([*1000..10000] - all_existing_reference_codes).sample
+  end
+
+
 end

@@ -2,23 +2,25 @@ zh-TW:
   views:
     templates:
       party:
-        new:
-          heading: 敬請回复
-          placeholder:
-            first_name: 名字
-            last_name: 姓
-          labels:
-            email: 電子郵件
-            phone: 電話
-            address: 地址
-            your_name: 你的名字？
-            guests: 誰會與你一同到來？
-            guests_all: 賓客
-          buttons:
-            add_guest: 增加賓客
-            submit: 提交
-          links:
-            update: Update saved RSVP details
+        headings:
+          new: 敬請回复
+          saved: Update RSVP Details
+          invalid: Invalid RSVP code
+        placeholder:
+          first_name: 名字
+          last_name: 姓
+        labels:
+          email: 電子郵件
+          phone: 電話
+          address: 地址
+          your_name: 你的名字？
+          guests: 誰會與你一同到來？
+          guests_all: 賓客
+        buttons:
+          add_guest: 增加賓客
+          submit: 提交
+        links:
+          update: Update saved RSVP details
       index:
         date: 2016年12月23日
         location: 香港

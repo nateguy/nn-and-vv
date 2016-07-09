@@ -1,4 +1,5 @@
-<%= "Dear #{@guest_list_raw}" %>
-<%= "Thanks for RSVP'ing and we look forward to seeing you in December! You can contact Nathan (nateguy@gmail.com) or Vivian (vivianlowc@hotmail.com) if you have any questions in the meantime." %>
-<%= "In case you need to change your RSVP details, enter your RSVP code (#{@party.reference_code}) here:" %>
-<%= "#{parties_path}" %>
+<%= t("mailer.parties.dear", name: guest_list) %>
+
+<%= t('mailer.parties.thank_you') %>
+
+<%= "#{t('mailer.parties.in_case')} #{parties_url} #{t('mailer.parties.enter_code')} #{party.reference_code}" %>
