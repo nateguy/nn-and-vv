@@ -85,14 +85,14 @@ en:
           location: Four Seasons Hotel
           room: Victoria Room I
           address: 8 Finance Street
-          invitation: For invited close relatives only
+          invitation: For family and relatives only
           shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
         ceremony:
           heading: Wedding Ceremony
           time: 2PM
           location: Bethanie Chapel
           address: 139 Pok Fu Lam Road, Pok Fu Lam
-          invitation: For invited relatives and close friends only
+          invitation: For invited relatives and friends only
         reception:
           heading: Reception/Banquet
           cocktail_time: Cocktail at 6pm
