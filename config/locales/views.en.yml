@@ -11,7 +11,7 @@ en:
           last_name: Last Name
         labels:
           you_may: |
-            You may also RSVP to Nathan at %{email1} (+852-95364865) or Vivian at %{email2} (+852-94853113)
+            You may also RSVP to Nathan at %{email1} or Vivian at %{email2}
           email: Email
           phone: Phone
           address: Address
