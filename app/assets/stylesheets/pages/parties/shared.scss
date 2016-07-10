@@ -44,6 +44,9 @@
       margin: 0;
       padding: 0;
       $input-separation: 5px;
+      span {
+        font-weight: bold;
+      }
 
       .guest-item {
         display: inline-block;
