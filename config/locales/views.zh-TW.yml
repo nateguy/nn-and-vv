@@ -3,15 +3,15 @@ zh-TW:
     templates:
       party:
         headings:
-          new: 敬請回复
-          saved: Update RSVP Details
-          invalid: Invalid RSVP code
+          new: RSVP 敬請回复
+          saved: 更新賓客資料
+          invalid: 沒有這RSVP編號
         placeholder:
           first_name: 名字
           last_name: 姓
         labels:
           you_may: |
-            You may RSVP by email to %{email}, by calling Nathan (95364865) or Vivian (94853113), or by using the following form
+            請填寫以下表格回覆出席詳情, 或以電郵回覆, 請電郵至%{email}, 或致電95364865(Nathan)或94853113(Vivian)
           email: 電子郵件
           phone: 電話
           address: 地址
@@ -22,7 +22,7 @@ zh-TW:
           add_guest: 增加賓客
           submit: 提交
         links:
-          update: Update saved RSVP details
+          update: 更新賓客資料
       index:
         date: 2016年12月23日
         location: 香港
