@@ -24,8 +24,8 @@ $body.on 'click', '.btn-add-guest', (e) ->
 
   $element_close = "Remove/消除"
   $element_close_btn = $(document.createElement('a')).addClass('btn-remove-guest').text($element_close)
-  $element.append($element_last_name_input)
   $element.append($element_first_name_input)
+  $element.append($element_last_name_input)
   $element.append($element_close_btn)
   $form.find(".guest_list").append($element)
   e.preventDefault()

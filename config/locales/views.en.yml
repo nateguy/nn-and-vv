@@ -10,6 +10,8 @@ en:
           first_name: First Name
           last_name: Last Name
         labels:
+          you_may: |
+            You may RSVP by email to %{email}, by calling Nathan (95364865) or Vivian (94853113), or by using the following form
           email: Email
           phone: Phone
           address: Address
@@ -79,25 +81,25 @@ en:
             date: December 23, 2016
         tea:
           heading: Tea Ceremony
-          time: 9:30AM
+          time: 10:20AM
           location: Four Seasons Hotel
-          room: Victoria Room
+          room: Victoria Room I
           address: 8 Finance Street
           invitation: For invited relatives only
+          shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
         ceremony:
           heading: Wedding Ceremony
-          time: 1:30PM
+          time: 2PM
           location: Bethanie Chapel
           address: 139 Pok Fu Lam Road, Pok Fu Lam
           invitation: For invited relatives and close friends only
         reception:
-          heading: Reception
-          time: 6PM
+          heading: Reception/Banquet
+          cocktail_time: Cocktail at 6pm
+          banquet_time: Banquet at 8pm
           location: Four Seasons Hotel
           room: Grand Ballroom
           address: 8 Finance Street
-          invitation: For invited guests only
-          shuttle: Shuttles will be provided from Bethanie Chapel
   components:
     shared:
       navbar:

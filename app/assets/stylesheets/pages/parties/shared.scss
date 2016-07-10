@@ -9,6 +9,11 @@
   }
   .parties-new-form-container {
     $row-width: 510px;
+
+    .header_text {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     form {
       margin-top: 10px;
     }

@@ -18,17 +18,17 @@
         %ul.guest_list
           - @party.guests.each_with_index do |guest, index|
             %li.guest-item
-              = f.input_field(:last_names,
-                  multiple: true,
-                  placeholder: t('views.templates.party.placeholder.last_name'),
-                  label: false,
-                  value: guest.last_name,
-                )
               = f.input_field(:first_names,
                   multiple: true,
                   placeholder: t('views.templates.party.placeholder.first_name'),
                   label: false,
                   value: guest.first_name,
+                )
+              = f.input_field(:last_names,
+                  multiple: true,
+                  placeholder: t('views.templates.party.placeholder.last_name'),
+                  label: false,
+                  value: guest.last_name,
                 )
               - unless index == 0
                 %button.btn.btn-remove-guest

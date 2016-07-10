@@ -5,7 +5,9 @@
       = t('views.templates.party.headings.new')
     = link_to load_parties_path, class: "js-load-reservation" do
       = t('views.templates.party.links.update')
-
+    .header_text
+      = t('views.templates.party.labels.you_may', email: link_to('nateguy@gmail.com', "mailto:nateguy@gmail.com")).html_safe
+      = ":"
     = simple_form_for(@party) do |f|
 
       = f.input(:email,
@@ -22,13 +24,13 @@
         %span.guest_list_title
           = t('views.templates.party.labels.your_name')
         %li.guest-item
-          = f.input_field(:last_names,
-              multiple: true,
-              placeholder: t('views.templates.party.placeholder.last_name'),
-              label: false)
           = f.input_field(:first_names,
               multiple: true,
               placeholder: t('views.templates.party.placeholder.first_name'),
+              label: false)
+          = f.input_field(:last_names,
+              multiple: true,
+              placeholder: t('views.templates.party.placeholder.last_name'),
               label: false)
         %span.guest_list_title
           = t('views.templates.party.labels.guests')

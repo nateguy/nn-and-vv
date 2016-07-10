@@ -38,6 +38,8 @@
           = t("views.templates.events.tea.address")
         .page-section__events_notes
           = t("views.templates.events.tea.invitation")
+        .page-section__events_notes
+          = t("views.templates.events.tea.shuttle")
     #ceremony.tab-pane.fade.in.active
       .tab-section-image
         = image_tag("pages/home/events/ceremony.jpg")
@@ -76,14 +78,13 @@
         .page-section__events_text
           %span.sub-header
             = "#{t('views.templates.events.shared.label.time')}:"
-          = t("views.templates.events.reception.time")
+          %span.block-text
+            = t("views.templates.events.reception.cocktail_time")
+            %br
+            = t("views.templates.events.reception.banquet_time")
         .page-section__events_text
           %span.sub-header
             = "#{t('views.templates.events.shared.label.address')}:"
           = t("views.templates.events.reception.address")
-        .page-section__events_notes
-          = t("views.templates.events.reception.invitation")
-        .page-section__events_notes
-          = t("views.templates.events.reception.shuttle")
     .page-section__events_map
       #event_map

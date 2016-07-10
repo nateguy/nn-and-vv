@@ -10,6 +10,8 @@ zh-TW:
           first_name: 名字
           last_name: 姓
         labels:
+          you_may: |
+            You may RSVP by email to %{email}, by calling Nathan (95364865) or Vivian (94853113), or by using the following form
           email: 電子郵件
           phone: 電話
           address: 地址
@@ -78,25 +80,25 @@ zh-TW:
             date: 2016年12月23日
         tea:
           heading: 茶道婚禮
-          time: 9:30AM
+          time: 10:20AM
           location: 香港四季酒店
-          room: 維港廳
+          room: 維港廳1
           address: 中環區金融街8號
           invitation: For invited relatives only
+          shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
         ceremony:
           heading: 婚禮
-          time: 1:30PM
+          time: 2PM
           location: 伯大尼校園
           address: 薄扶林道139號
           invitation: For invited relatives and close friends only
         reception:
           heading: 婚宴
-          time: 6PM
+          cocktail_time: Cocktail at 6pm
+          banquet_time: Banquet at 8pm
           location: 香港四季酒店
           address: 中環區金融街8號
           room: 四季大禮堂
-          invitation: For invited guests only
-          shuttle: Shuttles will be provided from Bethanie Chapel
   components:
     shared:
       navbar:
