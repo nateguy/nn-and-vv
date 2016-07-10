@@ -5,9 +5,7 @@
       = t('views.templates.party.headings.new')
     = link_to load_parties_path, class: "js-load-reservation" do
       = t('views.templates.party.links.update')
-    .header_text
-      = t('views.templates.party.labels.you_may', email: link_to('nateguy@gmail.com', "mailto:nateguy@gmail.com")).html_safe
-      = ":"
+
     = simple_form_for(@party) do |f|
 
       = f.input(:email,
@@ -19,7 +17,9 @@
       = f.input(:address,
           required: true,
           label: t('views.templates.party.labels.address'))
-
+      = f.input(:remarks,
+          required: false,
+          label: t('views.templates.party.labels.remarks'))
       %ul.guest_list
         %span.guest_list_title
           = t('views.templates.party.labels.your_name')
@@ -36,8 +36,14 @@
           = t('views.templates.party.labels.guests')
       %button.btn.btn-add-guest
         = t('views.templates.party.buttons.add_guest')
+
+
+
       .parties-new-form-actions
         -# = f.submit
         = f.button :submit,
             class: "btn-primary",
             value: t('views.templates.party.buttons.submit')
+
+    .header_text
+      = t('views.templates.party.labels.you_may', email1: link_to('nateguy@gmail.com', "mailto:nateguy@gmail.com"), email2: link_to('vivianlowc@hotmail.com', "mailto:vivianlowc@hotmail.com")).html_safe

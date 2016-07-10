@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160629150131) do
+ActiveRecord::Schema.define(version: 20160710093610) do
 
   create_table "parties", force: true do |t|
     t.string   "email"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160629150131) do
     t.string   "reference_code"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "remarks"
   end
 
   create_table "party_guests", force: true do |t|
