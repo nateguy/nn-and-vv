@@ -80,22 +80,24 @@ zh-TW:
             date: 2016年12月23日
         tea:
           heading: 敬茶儀式
-          time: 10:20AM
+          bride_time: 女家敬茶儀式於8時半開始
+          groom_time: 男家敬茶儀式於10時20分開始
           location: 香港四季酒店
-          room: 維港廳1
+          grooms_room: 男家在維港廳1
+          brides_room: 女家儀式房間會稍後通知
           address: 中環區金融街8號
           invitation: 只限被邀家屬
           shuttle: 提供午膳和教堂接送
         ceremony:
           heading: 婚禮
-          time: 2PM
+          time: 2時
           location: 伯大尼校園
           address: 薄扶林道139號
           invitation: 只限被邀家屬和朋友
         reception:
           heading: 婚宴
-          cocktail_time: 六時供候
-          banquet_time: 八時入席
+          cocktail_time: 6時供候
+          banquet_time: 8時入席
           location: 香港四季酒店
           address: 中環區金融街8號
           room: 四季大禮堂

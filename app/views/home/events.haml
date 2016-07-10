@@ -22,16 +22,22 @@
           = t("views.templates.events.reception.location")
         .page-section__events_text
           %span.sub-header
-            = "#{t('views.templates.events.shared.label.location')}:"
-          = t('views.templates.events.tea.room')
-        .page-section__events_text
-          %span.sub-header
             = "#{t('views.templates.events.shared.label.date')}:"
           = t('views.templates.events.shared.text.date')
         .page-section__events_text
           %span.sub-header
+            = "#{t('views.templates.events.shared.label.location')}:"
+          %span.block-text
+            = t('views.templates.events.tea.brides_room')
+            %br
+            = t('views.templates.events.tea.grooms_room')
+        .page-section__events_text
+          %span.sub-header
             = "#{t('views.templates.events.shared.label.time')}:"
-          = t("views.templates.events.tea.time")
+          %span.block-text
+            = t("views.templates.events.tea.bride_time")
+            %br
+            = t("views.templates.events.tea.groom_time")
         .page-section__events_text
           %span.sub-header
             = "#{t('views.templates.events.shared.label.address')}:"
@@ -69,12 +75,12 @@
           = t("views.templates.events.reception.location")
         .page-section__events_text
           %span.sub-header
-            = "#{t('views.templates.events.shared.label.location')}:"
-          = t('views.templates.events.reception.room')
-        .page-section__events_text
-          %span.sub-header
             = "#{t('views.templates.events.shared.label.date')}:"
           = t('views.templates.events.shared.text.date')
+        .page-section__events_text
+          %span.sub-header
+            = "#{t('views.templates.events.shared.label.location')}:"
+          = t('views.templates.events.reception.room')
         .page-section__events_text
           %span.sub-header
             = "#{t('views.templates.events.shared.label.time')}:"

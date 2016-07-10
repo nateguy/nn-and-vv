@@ -81,9 +81,11 @@ en:
             date: December 23, 2016
         tea:
           heading: Tea Ceremony
-          time: 10:20AM
+          bride_time: Bride's family at 8:30PM
+          groom_time: Groom's family at 10:20AM
           location: Four Seasons Hotel
-          room: Victoria Room I
+          grooms_room: Groom's family at Victoria Room I
+          brides_room: Bride's family TBD
           address: 8 Finance Street
           invitation: For family and relatives only
           shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
