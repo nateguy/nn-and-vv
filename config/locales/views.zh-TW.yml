@@ -79,23 +79,23 @@ zh-TW:
           text:
             date: 2016年12月23日
         tea:
-          heading: 茶道婚禮
+          heading: 敬茶儀式
           time: 10:20AM
           location: 香港四季酒店
           room: 維港廳1
           address: 中環區金融街8號
-          invitation: For invited relatives only
-          shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
+          invitation: 只限被邀家屬
+          shuttle: 提供午膳和教堂接送
         ceremony:
           heading: 婚禮
           time: 2PM
           location: 伯大尼校園
           address: 薄扶林道139號
-          invitation: For invited relatives and close friends only
+          invitation: 只限被邀家屬和朋友
         reception:
           heading: 婚宴
-          cocktail_time: Cocktail at 6pm
-          banquet_time: Banquet at 8pm
+          cocktail_time: 六時供候
+          banquet_time: 八時入席
           location: 香港四季酒店
           address: 中環區金融街8號
           room: 四季大禮堂
