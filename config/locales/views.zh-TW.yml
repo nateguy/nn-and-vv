@@ -11,7 +11,9 @@ zh-TW:
           last_name: 姓
         labels:
           you_may: |
-            或請以電郵回覆/致電 Nathan (%{email1}) 或 Vivian (%{email2})
+            或請以電郵回覆/致電
+          nathan_details: Nathan (%{email}或%{phone})
+          vivian_details: Vivian (%{email}或%{phone})
           email: 電子郵件
           phone: 電話
           address: 地址

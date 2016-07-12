@@ -46,4 +46,6 @@
             value: t('views.templates.party.buttons.submit')
 
     .header_text
-      = t('views.templates.party.labels.you_may', email1: link_to('nateguy@gmail.com', "mailto:nateguy@gmail.com"), email2: link_to('vivianlowc@hotmail.com', "mailto:vivianlowc@hotmail.com")).html_safe
+      %h5= "#{t('views.templates.party.labels.you_may')}:"
+      .detail-row= t('views.templates.party.labels.nathan_details', email: link_to('nateguy@gmail.com', "mailto:nateguy@gmail.com"), phone: "95364865").html_safe
+      .detail-row= t('views.templates.party.labels.vivian_details', email: link_to('vivianlowc@hotmail.com', "vivianlowc@hotmail.com"), phone: "94853113").html_safe
