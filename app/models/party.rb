@@ -15,23 +15,29 @@ class Party < ActiveRecord::Base
 
   attr_accessor :last_names
   attr_accessor :first_names
-  attr_accessor :vegetarian
-  
+  attr_accessor :vegetarians
+
+  class << self
+    def vegetarian_options
+      [true, false].collect{|v|[I18n.t("views.templates.party.form.vegetarian.#{v}"), v]}
+    end
+  end
+
   def guest_list
     guests&.pluck(:first_name)&.to_sentence
   end
 
   def assign_guests!
+    guests.destroy_all
     last_names.each_with_index do |last_name, index|
       first_name = first_names[index]
+      vegetarian = vegetarians[index]
       if last_name.present? && first_name.present?
-        self.guests << Party::Guest.find_or_initialize_by(party: self, last_name: last_name, first_name: first_name)
-      end
-    end
-
-    guests.each do |guest|
-      unless last_names.include?(guest.last_name)
-        guest.destroy!
+        self.guests << Party::Guest.new(
+                          party: self,
+                          last_name: last_name,
+                          first_name: first_name,
+                          vegetarian: vegetarian)
       end
     end
   end

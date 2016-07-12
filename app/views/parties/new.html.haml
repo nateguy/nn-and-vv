@@ -32,10 +32,7 @@
               multiple: true,
               placeholder: t('views.templates.party.placeholder.last_name'),
               label: false)
-          .checkbox
-            = check_box_tag 'party[vegetarian][]', true, false, style: 'margin: 0'
-            = label_tag 'party[vegetarian][]', "I'm Vegetarian"
-
+          = select_tag 'party[vegetarians][]', options_for_select(Party.vegetarian_options, false)
 
         %span.guest_list_title
           = t('views.templates.party.labels.guests')

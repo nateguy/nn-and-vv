@@ -17,9 +17,14 @@ en:
           phone: Phone
           address: Address
           remarks: Remarks/Special Requests
-          your_name: Your name
+          your_name: Your name and meal preference
           guests: Who's coming with you?
           guests_all: Who's coming?
+        form:
+          remove_guest: Remove
+          vegetarian:
+            "true": Vegetarian
+            "false": Non-Vegetarian
         buttons:
           add_guest: Add Guest
           submit: Submit
@@ -88,14 +93,14 @@ en:
           location: Four Seasons Hotel
           grooms_room: Groom's family at Victoria Room I
           brides_room: Bride's family TBD
-          address: 8 Finance Street
+          address: 8 Finance Street, Central, Hong Kong
           invitation: For family and relatives only
           shuttle: Lunch and shuttle bus to Bethanie Chapel will be provided
         ceremony:
           heading: Wedding Ceremony
           time: 2PM
           location: Bethanie Chapel
-          address: 139 Pok Fu Lam Road, Pok Fu Lam
+          address: 139 Pok Fu Lam Road, Hong Kong
           invitation: For invited relatives and friends only
         reception:
           heading: Reception/Banquet
@@ -103,7 +108,7 @@ en:
           banquet_time: Banquet at 8pm
           location: Four Seasons Hotel
           room: Grand Ballroom
-          address: 8 Finance Street
+          address: 8 Finance Street, Central, Hong Kong
   components:
     shared:
       navbar:

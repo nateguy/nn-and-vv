@@ -17,7 +17,7 @@
         = f.input(:remarks,
             required: false,
             label: t('views.templates.party.labels.remarks'))
-            
+
         = t('views.templates.party.labels.guests_all')
         %ul.guest_list
           - @party.guests.each_with_index do |guest, index|
@@ -34,9 +34,12 @@
                   label: false,
                   value: guest.last_name,
                 )
+              = select_tag 'party[vegetarians][]',
+                  options_for_select(Party.vegetarian_options, guest.vegetarian)
+
               - unless index == 0
-                %button.btn.btn-remove-guest
-                  %i.fa.fa-times
+                %a.btn-remove-guest
+                  = t("views.templates.party.form.remove_guest")
         %button.btn.btn-add-guest
           = t('views.templates.party.buttons.add_guest')
         .parties-new-form-actions

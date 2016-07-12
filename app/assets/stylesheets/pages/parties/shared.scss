@@ -29,7 +29,7 @@
         border-radius: 4px;
       }
     }
-    input {
+    select, input {
       height: $row-height;
       box-sizing: border-box;
       background-color: rgba(255,255,255,0.9);
@@ -49,37 +49,23 @@
       }
 
       .guest-item {
+        $input-width: ((7/10) * $row-width)/2;
+        $select-width: $row-width - 2*$input-width - (2 * $input-separation);
         display: inline-block;
         margin-bottom: 5px;
-
-        input.string, .checkbox {
-          width: ($row-width - $input-separation)/3;
-          display: block;
-          float: left;
-          &:first-child {
-            margin-right: $input-separation;
-          }
+        input {
+          margin-right: $input-separation;
+          width: $input-width;
         }
-
-        input.string {
+        select {
+          width: $select-width;
+        }
+        input, select {
           border: 1px solid #777777;
           border-radius: 4px;
-        }
-
-        .checkbox {
-          margin-top: 0;
-          margin-bottom: 0;
-          padding-left: 10px;
-
-          input {
-            position: absolute;
-            margin: 0;
-          }
-          label {
-            padding-left: 20px;
-            line-height: 40px;
-            vertical-align: middle;
-          }
+          // width: ($row-width - (2 * $input-separation))/3;
+          display: block;
+          float: left;
         }
       }
 
@@ -110,7 +96,7 @@
     .parties-new-form-container {
       .guest_list {
         .guest-item {
-          input {
+          select, input {
             width: 100%;
             margin-bottom: 2px;
           }
