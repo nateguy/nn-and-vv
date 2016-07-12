@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710093610) do
+ActiveRecord::Schema.define(version: 20160712101923) do
 
   create_table "parties", force: true do |t|
     t.string   "email"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20160710093610) do
     t.string   "last_name"
     t.string   "first_name"
     t.integer  "party_id"
+    t.boolean  "vegetarian"
   end
 
   create_table "users", force: true do |t|

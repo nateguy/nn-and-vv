@@ -51,16 +51,34 @@
       .guest-item {
         display: inline-block;
         margin-bottom: 5px;
-        input {
-          width: ($row-width - $input-separation)/2;
+
+        input.string, .checkbox {
+          width: ($row-width - $input-separation)/3;
           display: block;
           float: left;
-
-          border: 1px solid #777777;
-          border-radius: 4px;
-
           &:first-child {
             margin-right: $input-separation;
+          }
+        }
+
+        input.string {
+          border: 1px solid #777777;
+          border-radius: 4px;
+        }
+
+        .checkbox {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-left: 10px;
+
+          input {
+            position: absolute;
+            margin: 0;
+          }
+          label {
+            padding-left: 20px;
+            line-height: 40px;
+            vertical-align: middle;
           }
         }
       }

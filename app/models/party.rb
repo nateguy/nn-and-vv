@@ -15,7 +15,8 @@ class Party < ActiveRecord::Base
 
   attr_accessor :last_names
   attr_accessor :first_names
-
+  attr_accessor :vegetarian
+  
   def guest_list
     guests&.pluck(:first_name)&.to_sentence
   end
