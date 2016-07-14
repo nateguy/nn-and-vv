@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'photos' => 'home#photos'
   get 'wedding' => 'home#wedding'
   get 'events' => 'home#events'
+  get 'story' => 'home#story'
   get 'show_photo' => 'home#show_photo'
 
   resources :parties, only: [:index, :new, :create, :update] do

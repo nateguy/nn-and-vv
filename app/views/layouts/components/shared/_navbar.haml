@@ -9,6 +9,9 @@
           = link_to localized_root_path do
             = I18n.t("components.shared.navbar.home")
         %li.navbar-item
+          = link_to story_path do
+            = I18n.t("components.shared.navbar.story")
+        %li.navbar-item
           = link_to wedding_path do
             = I18n.t("components.shared.navbar.party")
         %li.navbar-item
