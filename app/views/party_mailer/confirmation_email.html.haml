@@ -9,7 +9,12 @@
       = t('mailer.parties.thank_you')
     %p
       = t('mailer.parties.in_case')
-      = link_to parties_path do
+      = link_to new_party_url do
         = t('mailer.parties.link')
+      = ". "
       = t('mailer.parties.enter_code')
       %b= party.reference_code
+    %p
+      = t('mailer.parties.love')
+      %br
+      = t('mailer.parties.nate_and_vivian')

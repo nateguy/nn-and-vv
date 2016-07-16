@@ -1,10 +1,13 @@
 zh-TW:
   mailer:
     parties:
-      subject: Vivian和  Nate的婚禮 - 2016年12月23日!
+      subject: Vivian和Nathan的婚禮
       dear: "親愛的%{name}"
       thank_you: |
-        多謝您們敬請回复！我們很高興你參加我們的婚禮！
+        我們很高興你們會參加我們2016年12月23日的婚禮!
       in_case: 如果你要更新賓客資料，請去
       link: 這網址
-      enter_code: "入你的RSVP編號:"
+      enter_code: |
+        按更新賓客資料。之後打入你的RSVP編號:
+      love: "此致,"
+      nate_and_vivian: Vivian和Nathan
