@@ -2,5 +2,5 @@ zh-TW:
   concept:
     parties:
       modal:
-        header: Enter RSVP Reference Code
-        label: You can find your RSVP reference code in your confirmation email. If you have lost this email, please email
+        header: 請入你的RSVP編號
+        label: 如果你沒有這個偏好，請以電郵
