@@ -35,10 +35,10 @@ class PartiesController < ApplicationController
     if @party.save
       PartyMailer.confirmation_email(@party).deliver
       #head 200
-      flash[:success] = "RSVP saved!"
+      flash[:success] = I18n.t('notification.parties.create.success')
     else
       #head 422
-      flash[:error] = "RSVP failed! Please try again"
+      flash[:error] = I18n.t('notification.parties.create.fail')
     end
     redirect_to localized_root_path
   end
@@ -49,9 +49,9 @@ class PartiesController < ApplicationController
     @party.update(party_params)
     @party.assign_guests!
     if @party.save
-      flash[:success] = "Reservation Info Updated"
+      flash[:success] = I18n.t('notification.parties.update.success')
     else
-      flash[:error] = "Reservation not successful. Please try again"
+      flash[:error] = I18n.t('notification.parties.update.fail')
     end
     redirect_to localized_root_path
   end
@@ -75,6 +75,6 @@ class PartiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def party_params
-      params.require(:party).permit(:email, :phone, :address, {vegetarians: []}, {last_names: []}, {first_names: []}, :reference_code)
+      params.require(:party).permit(:email, :phone, :remarks, :address, {vegetarians: []}, {last_names: []}, {first_names: []}, :reference_code)
     end
 end

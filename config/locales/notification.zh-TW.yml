@@ -1,0 +1,9 @@
+zh-TW:
+  notification:
+    parties:
+      create:
+        success: 已成功敬請回复
+        fail: 請提供正確資料
+      update:
+        success: 已成功更新敬請回复资料
+        fail: 請提供正確資料

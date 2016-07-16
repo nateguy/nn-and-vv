@@ -1,0 +1,9 @@
+en:
+  notification:
+    parties:
+      create:
+        success: RSVP successful!
+        fail: RSVP failed! Please try again
+      update:
+        success: RSVP Info Updated!
+        fail: RSVP failed! Please try again
