@@ -11,11 +11,22 @@
       color: #000000;
       width: 40px;
     }
+    position: relative;
   }
   .navbar-collapse {
     background-color: rgba(252,202,210,0.8);
     &.collapsing {
       display: none;
+    }
+
+    &.in {
+      background-color: rgba(252,202,210,1);
+      border: 1px solid black;
+      position: absolute;
+      z-index: 1000;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   @media (min-width: 768px) {

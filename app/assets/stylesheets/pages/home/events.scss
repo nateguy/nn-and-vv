@@ -77,6 +77,7 @@
   @include mobile-only {
     .page-section {
       width: auto;
+      padding: 0;
       .tab-section-image {
         display: none;
       }
