@@ -1,10 +1,10 @@
 zh-TW:
   mailer:
     parties:
-      subject: See you at Vivian & Nate's Wedding - December 23, 2016!
-      dear: "Dear %{name}"
+      subject: Vivian和  Nate的婚禮 - 2016年12月23日!
+      dear: "親愛的%{name}"
       thank_you: |
-        Thanks for RSVP'ing and we look forward to seeing you in December! You can contact Nathan (nateguy@gmail.com) or Vivian (vivianlowc@hotmail.com) if you have any questions in the meantime.
-      in_case: In case you need to change your RSVP details, go to
-      link: this link
-      enter_code: "and enter your RSVP reference code:"
+        多謝您們敬請回复！我們很高興你參加我們的婚禮！
+      in_case: 如果你要更新賓客資料，請去
+      link: 這網址
+      enter_code: "入你的RSVP編號:"
