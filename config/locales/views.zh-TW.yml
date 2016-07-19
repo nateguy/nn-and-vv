@@ -3,7 +3,7 @@ zh-TW:
     templates:
       party:
         headings:
-          new: RSVP 敬請回复
+          new: RSVP敬請回复
           saved: 更新賓客資料
           invalid: 沒有這RSVP編號
         placeholder:
@@ -33,11 +33,7 @@ zh-TW:
           update: 更新賓客資料
       story:
         relationship: |
-          It was the winter of 2012. He just moved to HK, working as an urban planning researcher.
-          She was finishing up her final year as an architecture student at the same university.
-          Somewhat randomly they became friends while discussing politics. Soon they realized they had many common interests, including a fondness for ALIENS and travelling to off-the-beaten path places.
-          Their first trip together was to Myanmar where they witnessed the historic opening up of the country.
-          It was in this exotic land that they truly found each other. One day in the October of last year, he made her play a game of hide and seek. She found the ring and she said yes!
+          於2012年的冬天，他從美國回來香港，到大學中研究城市規劃; 而她，正在完成最後一年的建築系課程。他和她偶然於某課堂上相遇，不知不覺地成為朋友。他們很快就發現大家有很多相似的地方，例如: 對外星人的熱愛，對冷門旅遊地點的著迷。緬甸就是他們踏上的第一個旅程。他們見證了這個國家歷史性的開放。在這個充滿異國情調的國度，他們更找到對方，成為情侶。2015年十月，他着她玩尋寶遊戲，而鑽戒就是那個寶藏。最後，她點頭答應了。
       index:
         date: 2016年12月23日
         location: 香港
