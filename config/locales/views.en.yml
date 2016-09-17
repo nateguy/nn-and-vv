@@ -80,9 +80,9 @@ en:
             role: Bridesmaid
             image_file: doreen
           -
-            full_name: Hilda
+            full_name: Katherine
             role: Bridesmaid
-            image_file: hilda
+            image_file: katherine
 
       events:
         shared:

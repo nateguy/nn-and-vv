@@ -77,9 +77,9 @@ zh-TW:
             role: 姊妹
             image_file: doreen
           -
-            full_name: Hilda
+            full_name: Katherine
             role: 姊妹
-            image_file: hilda
+            image_file: katherine
       events:
         shared:
           label:
